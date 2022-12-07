@@ -1,0 +1,15 @@
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/bin/Debug/net7.0/dev-and-build-tools
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/bin/Debug/net7.0/dev-and-build-tools.deps.json
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/bin/Debug/net7.0/dev-and-build-tools.runtimeconfig.json
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/bin/Debug/net7.0/dev-and-build-tools.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/bin/Debug/net7.0/dev-and-build-tools.pdb
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.csproj.AssemblyReference.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.GeneratedMSBuildEditorConfig.editorconfig
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.AssemblyInfoInputs.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.AssemblyInfo.cs
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.csproj.CoreCompileInputs.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/refint/dev-and-build-tools.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.pdb
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/dev-and-build-tools.genruntimeconfig.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/Debug/net7.0/ref/dev-and-build-tools.dll
