@@ -1,0 +1,15 @@
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/bin/Debug/net7.0/oop-task
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/bin/Debug/net7.0/oop-task.deps.json
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/bin/Debug/net7.0/oop-task.runtimeconfig.json
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/bin/Debug/net7.0/oop-task.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/bin/Debug/net7.0/oop-task.pdb
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.csproj.AssemblyReference.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.GeneratedMSBuildEditorConfig.editorconfig
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.AssemblyInfoInputs.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.AssemblyInfo.cs
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.csproj.CoreCompileInputs.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/refint/oop-task.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.pdb
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/oop-task.genruntimeconfig.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/oop-task/obj/Debug/net7.0/ref/oop-task.dll
