@@ -2,44 +2,45 @@
 
 class Program
 {
-	
-// To return char for a value. For
-// example '2' is returned for 2.
-// 'A' is returned for 10. 'B' for 11
-static char ConvertToChar(int num)
-{
-	if (num >= 0 && num <= 9)
-		return Convert.ToChar(num + 48);
-	else
-		return Convert.ToChar(num - 10 + 65);
-}
+    static char ConvertToChar(int num)
+    {
+        if (num >= 0 && num <= 9)
+            return Convert.ToChar(num + 48);
+        else
+            return Convert.ToChar(num - 10 + 65);
+    }
 
-// Function to convert a given decimal number
-// to a base 'base' and
-static string ConvertToBase(int base1, int inputNum)
-{
-	string s = "";
+    static string ConvertToBase(int baseNum, int num)
+    {
+        string str = "";
 
-	// Convert input number is given
-	// base by repeatedly dividing it
-	// by base and taking remainder
-	while (inputNum > 0)
-	{
-		s += ConvertToChar(inputNum % base1);
-		inputNum /= base1;
-	}
-	char[] res = s.ToCharArray();
+        while (num > 0)
+        {
+            str += ConvertToChar(num % baseNum);
+            num /= baseNum;
+        }
+        char[] res = str.ToCharArray();
 
-	// Reverse the result
-	Array.Reverse(res);
-	return new String(res);
-}
-static void Main()
-{
-    Console.Write("Input an integer in decimal form: ");
-    int num = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Input base number you want to convert to: ");
-    int baseNum = Convert.ToInt32(Console.ReadLine());
-	Console.WriteLine(num + " in base "+baseNum+" is " + ConvertToBase(baseNum, num));
-}
+        Array.Reverse(res);
+        return new String(res);
+    }
+    static void Main()
+    {
+        Console.Write("Input an integer in decimal form: ");
+        string? num = Console.ReadLine();
+        int cleanNum;
+        while (!int.TryParse(num, out cleanNum))
+        {
+            Console.Write("This is not valid input. Please enter an integer value: ");
+            num = Console.ReadLine();
+        }
+        Console.Write("Input base number you want to convert to: ");
+        string? baseNum = Console.ReadLine();
+		int cleanBaseNum;
+		while(!int.TryParse(baseNum, out cleanBaseNum)) {
+			Console.Write("This is not valid input. Please enter an integer value: ");
+			baseNum = Console.ReadLine();
+		}
+        Console.WriteLine(num + " in base " + cleanBaseNum + " is " + ConvertToBase(cleanBaseNum, cleanNum));
+    }
 }
