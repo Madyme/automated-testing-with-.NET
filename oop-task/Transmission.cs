@@ -1,15 +1,24 @@
 // type, number of gears, manufacturer
 
+interface ITransmission {
+    void ShowTransmissionInfo();
+}
 class Transmission {
-    string type = "";
-    int numOfGears = 6;
-    string manufacturer = "";
     
-    public Transmission (string type, int numOfGears, string manufacturer) {
-        Type = type; NumOfGears = numOfGears; Manufacturer = manufacturer;
+    public string? Type {get; set;}
+    public int NumOfGears {get; set;} = 6;
+    public string? Manufacturer {get; set;}
+
+    public void ShowTransmissionInfo() {
+        Console.WriteLine($"Trnsmission type: {Type}, \n transmission number of gears: {NumOfGears}, \n transmission manufacturer: {Manufacturer}");
     }
 
-    public string Type {get; set;}
-    public int NumOfGears {get; set;}
-    public string Manufacturer {get; set;}
+    public void GetTransmissionInfo() {
+        Console.Write("Enter transmission type: ");
+        this.Type = Console.ReadLine();
+        Console.Write("How many gears are there in this transmission: ");
+        this.NumOfGears = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter the name of transmission manufacturer: ");
+        this.Manufacturer = Console.ReadLine();
+    }
 }
