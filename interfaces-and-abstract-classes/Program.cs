@@ -4,6 +4,8 @@
 var birdFlyToCoordinate = bird.FlyTo(bird.FlyToPoint);
 var birdCurrentCoordinate = bird.GetCurrentPosition(bird.CurrentPoint);
 Console.WriteLine(bird.GetDistance(birdFlyToCoordinate, birdCurrentCoordinate));
+double distance = bird.GetDistance(birdFlyToCoordinate, birdCurrentCoordinate);
+Console.WriteLine(bird.GetFlyTime(distance));
 struct Coordinate {
 
     public double xCoordinate;
@@ -27,15 +29,14 @@ struct Coordinate {
 
 interface IFlyable {
     Coordinate FlyTo(Coordinate newPoint) ;
-    // double GetFlyTime(Coordinate newPoint2) {
-    //     newPoint2.PrintCoordinate();
-    // }
+    double GetFlyTime(double distance);
 }
 
 class Bird : IFlyable {
 
     public Coordinate CurrentPoint {get; set;}
     public Coordinate FlyToPoint {get; set;}
+    public double Speed {get; set;} = 20;
 
     public Bird(Coordinate flyToPoint, Coordinate currentPoint) {
         CurrentPoint = currentPoint;
@@ -56,5 +57,10 @@ class Bird : IFlyable {
     public double GetDistance(Coordinate flyToPoint, Coordinate currentPoint) {
         return Math.Sqrt(Math.Pow((flyToPoint.xCoordinate - currentPoint.xCoordinate), 2) + Math.Pow((flyToPoint.yCoordinate - currentPoint.yCoordinate), 2) + Math.Pow((flyToPoint.zCoordinate - currentPoint.zCoordinate), 2));
     }
+
+    public double GetFlyTime(double distance) {
+        return distance / this.Speed;
+    }
+
 
 }
