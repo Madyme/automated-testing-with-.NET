@@ -1,11 +1,25 @@
-﻿Bird bird = new Bird(new Coordinate(4, 5, 6), new Coordinate(0, 0, 0));
+﻿// Bird bird = new Bird(new Coordinate(4, 5, 6), new Coordinate(0, 0, 0));
 // bird.FlyTo(bird.FlyToPoint);
 // Console.WriteLine(bird.FlyTo(bird.FlyToPoint));
-var birdFlyToCoordinate = bird.FlyTo(bird.FlyToPoint);
-var birdCurrentCoordinate = bird.GetCurrentPosition(bird.CurrentPoint);
-Console.WriteLine(bird.GetDistance(birdFlyToCoordinate, birdCurrentCoordinate));
-double distance = bird.GetDistance(birdFlyToCoordinate, birdCurrentCoordinate);
-Console.WriteLine(bird.GetFlyTime(distance));
+// var birdFlyToCoordinate = bird.FlyTo(bird.FlyToPoint);
+// var birdCurrentCoordinate = bird.GetCurrentPosition(bird.CurrentPoint);
+// Console.WriteLine(bird.GetDistance(birdFlyToCoordinate, birdCurrentCoordinate));
+// double distance = bird.GetDistance(birdFlyToCoordinate, birdCurrentCoordinate);
+// Console.WriteLine(bird.GetFlyTime(distance));
+
+// Plane plane = new Plane(new Coordinate(4, 5, 6), new Coordinate(200, 500, 600));
+// var planeFlyToCoordinate = plane.FlyTo(plane.FlyToPoint);
+// var planeCurrentCoordinate = plane.GetCurrentPosition(plane.CurrentPoint);
+// double distance = plane.GetDistance(planeFlyToCoordinate, planeCurrentCoordinate);
+// Console.WriteLine(plane.GetFlyTime(distance));
+
+// Drone drone = new Drone(new Coordinate(4, 5, 6), new Coordinate(200, 500, 600));
+// var droneFlyToCoordinate = drone.FlyTo(drone.FlyToPoint);
+// var droneCurrentCoordinate = drone.GetCurrentPosition(drone.CurrentPoint);
+// double distance = drone.GetDistance(droneFlyToCoordinate, droneCurrentCoordinate);
+// Console.WriteLine(drone.GetFlyTime(distance));
+
+
 struct Coordinate {
 
     public double xCoordinate;
@@ -32,35 +46,3 @@ interface IFlyable {
     double GetFlyTime(double distance);
 }
 
-class Bird : IFlyable {
-
-    public Coordinate CurrentPoint {get; set;}
-    public Coordinate FlyToPoint {get; set;}
-    public double Speed {get; set;} = 20;
-
-    public Bird(Coordinate flyToPoint, Coordinate currentPoint) {
-        CurrentPoint = currentPoint;
-        FlyToPoint = flyToPoint;
-        
-    }
-
-    public Coordinate FlyTo(Coordinate newPoint2) {
-        // Console.WriteLine($"this is {newPoint2.xCoordinate}, {newPoint2.yCoordinate}, {newPoint2.zCoordinate} flyTo position");
-        return new Coordinate(newPoint2.xCoordinate, newPoint2.yCoordinate, newPoint2.zCoordinate);
-    }
-
-    public Coordinate GetCurrentPosition(Coordinate newPoint) {
-        // Console.WriteLine($"this is {newPoint.xCoordinate} current position");
-        return new Coordinate(newPoint.xCoordinate, newPoint.yCoordinate, newPoint.zCoordinate);
-    }
-    
-    public double GetDistance(Coordinate flyToPoint, Coordinate currentPoint) {
-        return Math.Sqrt(Math.Pow((flyToPoint.xCoordinate - currentPoint.xCoordinate), 2) + Math.Pow((flyToPoint.yCoordinate - currentPoint.yCoordinate), 2) + Math.Pow((flyToPoint.zCoordinate - currentPoint.zCoordinate), 2));
-    }
-
-    public double GetFlyTime(double distance) {
-        return distance / this.Speed;
-    }
-
-
-}
