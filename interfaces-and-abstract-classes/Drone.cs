@@ -7,7 +7,7 @@ class Drone : IFlyable {
         this.CurrentPoint = currentPoint;
     }
 
-    public double ConstantSpeed {get; set;} = 10; // define constant speed of drone
+    public Random? constantSpeed; //randomly generate constant speed of drone
 
     public Coordinate FlyTo(Coordinate newPoint2) { // define fly-to point
         return new Coordinate(newPoint2.xCoordinate, newPoint2.yCoordinate, newPoint2.zCoordinate);
@@ -28,6 +28,7 @@ class Drone : IFlyable {
         //3. add hover time (1 minute) on each time interval to overall flight time: numberOfTimeIntervals * 1 => numberOfTimeIntervals;
         //4. overall flightTime = t + numberOfTimeIntervals => distance / this.ConstantSpeed * 60 + distance / this.ConstantSpeed * 60 / 10 =>
         // distance / this.ConstantSpeed * 60 + distance / this.ConstantSpeed * 6 = distance / this.ConstantSpeed * 66;
-        return distance / this.ConstantSpeed * 66;
+        this.constantSpeed = new Random();
+        return distance / this.constantSpeed.Next(1, 50) * 66;
     }
 }

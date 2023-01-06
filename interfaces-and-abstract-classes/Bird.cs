@@ -2,11 +2,11 @@ class Bird : IFlyable {
 
     public Coordinate CurrentPoint {get; set;}
     public Coordinate FlyToPoint {get; set;}
-    public double Speed {get; set;} = 20; //constant speed of bird
+    public Random? speed ; //constant speed of bird (generated randomly)
 
     public Bird(Coordinate flyToPoint, Coordinate currentPoint) {
-        CurrentPoint = currentPoint;
-        FlyToPoint = flyToPoint;
+        this.CurrentPoint = currentPoint;
+        this.FlyToPoint = flyToPoint;
         
     }
 
@@ -22,8 +22,9 @@ class Bird : IFlyable {
         return Math.Sqrt(Math.Pow((flyToPoint.xCoordinate - currentPoint.xCoordinate), 2) + Math.Pow((flyToPoint.yCoordinate - currentPoint.yCoordinate), 2) + Math.Pow((flyToPoint.zCoordinate - currentPoint.zCoordinate), 2));
     }
 
-    public double GetFlyTime(double distance) { // calculate flight time
-        return distance / this.Speed;
+    public double GetFlyTime(double distance) { // calculate flight
+        this.speed = new Random();
+        return distance / this.speed.Next(0, 21); 
     }
 
 
