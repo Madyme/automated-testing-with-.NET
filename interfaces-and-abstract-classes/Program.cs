@@ -31,7 +31,13 @@ void Execute()
                       "2. Plane\n" +
                       "3. Drone");
     Console.Write("Enter an option you would like to get info about: ");
-    int option = Convert.ToInt32(Console.ReadLine());
+    string? inputOption = Console.ReadLine();
+    int option;
+    while(!int.TryParse(inputOption, out option)) {
+        Console.Write("Invalid format. Please, enter a number: ");
+        inputOption = Console.ReadLine();
+    }
+        label: 
     switch (option)
     {
         case 1:
@@ -65,6 +71,15 @@ void Execute()
             double droneDistance = drone.GetDistance(droneFlyToCoordinate, droneCurrentCoordinate);
             Console.WriteLine($"the overall flight time of the drone: {drone.GetFlyTime(droneDistance)} minutes");
             break;
+        default: 
+            Console.Write("You need to enter options only from 1 to 3: ");
+            inputOption = Console.ReadLine();
+            while(!int.TryParse(inputOption, out option) || (option < 1 || option > 3)) {
+                Console.Write("You need to enter options only from 1 to 3: ");
+                inputOption = Console.ReadLine();
+            }
+            goto label;
+            
 
     }
 }
