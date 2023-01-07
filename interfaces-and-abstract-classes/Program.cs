@@ -3,11 +3,25 @@
 Coordinate CreateCoordinate()
 {
     Console.Write("Enter positive x coordinate: ");
-    int xCoordinate = Convert.ToInt32(Console.ReadLine());
+    int xCoordinate; int yCoordinate; int zCoordinate;
+    string? xInput = Console.ReadLine();
+    // validate input fromats
+    while(!int.TryParse(xInput, out xCoordinate)) {
+        Console.Write("Invalid format. Please, enter a number: ");
+        xInput = Console.ReadLine();
+    }
     Console.Write("Enter positive y coordinate: ");
-    int yCoordinate = Convert.ToInt32(Console.ReadLine());
+    string? yInput = Console.ReadLine();
+     while(!int.TryParse(yInput, out yCoordinate)) {
+        Console.Write("Invalid format. Please, enter a number: ");
+        yInput = Console.ReadLine();
+    }
     Console.Write("Enter positive z coordinate: ");
-    int zCoordinate = Convert.ToInt32(Console.ReadLine());
+    string? zInput = Console.ReadLine();
+     while(!int.TryParse(zInput, out zCoordinate)) {
+        Console.Write("Invalid format. Please, enter a number: ");
+        zInput = Console.ReadLine();
+    }
     return new Coordinate(xCoordinate, yCoordinate, zCoordinate);
 }
 
