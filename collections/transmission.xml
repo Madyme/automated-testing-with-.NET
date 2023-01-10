@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<transmissionTypeList>
+    <transmissionType transmType="manual">
+        <car name="Spark">
+            <brandName>Chevrolet</brandName>
+            <engPower>30</engPower>
+            <engVolume>2</engVolume>
+            <type>internal combustion</type>
+            <engSerialNum>PJ3083</engSerialNum>
+        </car>
+        <truck>
+            <trailerType>curtainside</trailerType>
+            <engPower>50</engPower>
+            <engVolume>16</engVolume>
+            <type>internal combustion</type>
+            <engSerialNum>BA2332</engSerialNum>
+        </truck>
+        <truck>
+            <trailerType>refrigirated</trailerType>
+            <engPower>323</engPower>
+            <engVolume>35</engVolume>
+            <type>internal combustion</type>
+            <engSerialNum>KG9384</engSerialNum>
+        </truck>
+        <truck>
+            <trailerType>drop-deck</trailerType>
+            <engPower>200</engPower>
+            <engVolume>10</engVolume>
+            <type>internal combustion</type>
+            <engSerialNum>LS5454</engSerialNum>
+        </truck>
+        <bus numberOfSeats="56">
+            <engPower>44</engPower>
+            <engVolume>29</engVolume>
+            <type>electric</type>
+            <engSerialNum>PS0923</engSerialNum>
+        </bus>
+        <bus numberOfSeats="39">
+            <engPower>40</engPower>
+            <engVolume>13</engVolume>
+            <type>internal combustion</type>
+            <engSerialNum>LA0909</engSerialNum>
+        </bus>
+        <bus numberOfSeats="35">
+            <engPower>25</engPower>
+            <engVolume>14</engVolume>
+            <type>electric</type>
+            <engSerialNum>DJ2937</engSerialNum>
+        </bus>
+    </transmissionType>
+
+    <transmissionType transmType="automatic">
+        <car name="Sante fe">
+            <brandName>hundai</brandName>
+            <engPower>191</engPower>
+            <engVolume>5</engVolume>
+            <type>electric</type>
+            <engSerialNum>AS0903</engSerialNum>
+        </car>
+        <car name="Land Cruiser">
+            <brandName>toyota</brandName>
+            <engPower>344</engPower>
+            <engVolume>7</engVolume>
+            <type>internal combustion</type>
+            <engSerialNum>PJ3422</engSerialNum>
+        </car>
+    </transmissionType>
+
+    <transmissionType transmType="cvt">
+        <scooter>
+            <hasSeats>false</hasSeats>
+            <engPower>22</engPower>
+            <engVolume>4</engVolume>
+            <type>electric</type>
+            <engSerialNum>KS2836</engSerialNum>
+        </scooter>
+        <scooter>
+            <hasSeats>true</hasSeats>
+            <engPower>20</engPower>
+            <engVolume>4</engVolume>
+            <type>brushed</type>
+            <engSerialNum>MD6757</engSerialNum>
+        </scooter>
+        <scooter>
+            <hasSeats>true</hasSeats>
+            <engPower>10</engPower>
+            <engVolume>3</engVolume>
+            <type>electric</type>
+            <engSerialNum>SD7657</engSerialNum>
+        </scooter>
+    </transmissionType>
+</transmissionTypeList>

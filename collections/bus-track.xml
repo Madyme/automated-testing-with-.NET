@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<truckList>
+    <truck>
+        <engPower>50</engPower>
+        <type>internal combustion</type>
+        <engSerialNum>BA2332</engSerialNum>
+    </truck>
+    <truck>
+        <engPower>323</engPower>
+        <type>internal combustion</type>
+        <engSerialNum>KG9384</engSerialNum>
+    </truck>
+    <truck>
+        <engPower>200</engPower>
+        <type>internal combustion</type>
+        <engSerialNum>LS5454</engSerialNum>
+    </truck>
+    <bus>
+        <engPower>44</engPower>
+        <type>electric</type>
+        <engSerialNum>PS0923</engSerialNum>
+    </bus>
+     <bus>
+        <engPower>40</engPower>
+        <type>internal combustion</type>
+        <engSerialNum>LA0909</engSerialNum>
+    </bus>
+     <bus>
+        <engPower>25</engPower>
+        <type>electric</type>
+        <engSerialNum>DJ2937</engSerialNum>
+    </bus>
+</truckList>

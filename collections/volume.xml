@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<vehicleList>
+    <truck>
+        <trailerType>curtainside</trailerType>
+        <engPower>50</engPower>
+        <engVolume>16</engVolume>
+        <type>internal combustion</type>
+        <engSerialNum>BA2332</engSerialNum>
+        <transmType>manual</transmType>
+    </truck>
+    <truck>
+        <trailerType>refrigirated</trailerType>
+        <engPower>323</engPower>
+        <engVolume>35</engVolume>
+        <type>internal combustion</type>
+        <engSerialNum>KG9384</engSerialNum>
+        <transmType>manual</transmType>
+    </truck>
+     <bus>
+        <numberOfSeats>56</numberOfSeats>
+        <engPower>44</engPower>
+        <engVolume>29</engVolume>
+        <type>electric</type>
+        <engSerialNum>PS0923</engSerialNum>
+        <transmType>manual</transmType>
+    </bus>
+</vehicleList>
