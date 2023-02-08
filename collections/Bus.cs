@@ -4,8 +4,9 @@ class Bus : Vehicle {
     public int NumberOfSeats {
 
         set {
-            if(numberOfSeats < 36) {
-                Console.WriteLine("Minimal Number of seats is 36");
+            if(value < 36) {
+                throw new InitializationException("Minimal Number of seats is 36", value);
+                
             } else {
                 numberOfSeats = value;
             }
@@ -16,10 +17,4 @@ class Bus : Vehicle {
         }
     }
 
-    public Bus(int seatsNum, int engPower, int engVolume, string type,
-               string engSerialNum, string transmType) 
-               : base(engPower, engVolume, type, engSerialNum, transmType) {
-
-                 NumberOfSeats = seatsNum;
-    }
 }
