@@ -38,19 +38,37 @@ public class Car
     public void PopulateModelList()
     {
         Console.Write("Enter car Model Name: ");
-        model.Add(Console.ReadLine());
+        string? modelName = Console.ReadLine();
+        while(model.Contains(modelName)) {
+            Console.WriteLine("This car model already exists. Enter a different model name: ");
+            modelName = Console.ReadLine();
+        }
+        model.Add(modelName);
     }
 
     public void PopulateQuantityList()
     {
+        int res;
+        string? carQuantity;
         Console.Write("Enter car quantity: ");
-        quantity.Add(Convert.ToInt32(Console.ReadLine()));
+        carQuantity = Console.ReadLine();
+        while(!int.TryParse(carQuantity, out res)) {
+            Console.WriteLine("Invalid format. Enter an integer: ");
+            carQuantity = Console.ReadLine();
+        }
+            quantity.Add(res);
     }
 
     public void PopulateCostList()
     {
+        int result;
         Console.Write("Enter car price: ");
-        cost.Add(Convert.ToInt32(Console.ReadLine()));
+        string? carPrice = Console.ReadLine();
+        while(!int.TryParse(carPrice, out result)) {
+            Console.WriteLine("Invalid format. Enter an integer: ");
+            carPrice = Console.ReadLine();
+        }
+        cost.Add(result);
     }
 
     public int CountCars()
