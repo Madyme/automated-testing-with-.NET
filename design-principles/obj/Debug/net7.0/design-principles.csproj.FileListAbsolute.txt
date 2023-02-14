@@ -1,0 +1,15 @@
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/bin/Debug/net7.0/design-principles
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/bin/Debug/net7.0/design-principles.deps.json
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/bin/Debug/net7.0/design-principles.runtimeconfig.json
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/bin/Debug/net7.0/design-principles.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/bin/Debug/net7.0/design-principles.pdb
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.csproj.AssemblyReference.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.GeneratedMSBuildEditorConfig.editorconfig
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.AssemblyInfoInputs.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.AssemblyInfo.cs
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.csproj.CoreCompileInputs.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/refint/design-principles.dll
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.pdb
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/design-principles.genruntimeconfig.cache
+/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/design-principles/obj/Debug/net7.0/ref/design-principles.dll
