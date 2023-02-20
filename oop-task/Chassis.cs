@@ -1,12 +1,12 @@
 // number of wheels, number, permissible load
 
-interface IChassis {
+// interface IChassis {
 
-    void ShowChassisInfo ();
+//     void ShowChassisInfo ();
     
-}
+// }
 
-class Chassis : IChassis
+class Chassis 
 {
     public int NumberOfWheels {get; set;} = 4;
     public string? Num {get; set;}

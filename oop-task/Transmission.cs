@@ -1,8 +1,8 @@
 // type, number of gears, manufacturer
 
-interface ITransmission {
-    void ShowTransmissionInfo();
-}
+// interface ITransmission {
+//     void ShowTransmissionInfo();
+// }
 class Transmission {
     
     public string? Type {get; set;}
