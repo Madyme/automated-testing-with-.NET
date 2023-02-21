@@ -4,7 +4,7 @@
 // interface IEngine  {
 //     void ShowEngineInfo();
 // }
-public abstract class Engine {
+public class Engine {
 
     public int Power {get; set;}
     public int Volume {get; set;}
@@ -12,19 +12,19 @@ public abstract class Engine {
 
     public string? SerialNum {get; set;}
 
-    public abstract void GetEngineInfo();
-    // {
-    //     Console.Write("Enter engine power: ");
-    //     this.Power = Convert.ToInt32(Console.ReadLine());
-    //     Console.Write("Enter engine volume: ");
-    //     this.Volume = Convert.ToInt32(Console.ReadLine());
-    //     Console.Write("Enter engine type: ");
-    //     this.Type = Console.ReadLine();
-    //     Console.Write("Enter engine serial number: ");
-    //     this.SerialNum = Console.ReadLine();
-    // }
-    // public void ShowEngineInfo() {
-    //     Console.WriteLine($"Engine power: {Power}\n Engine volume: {Volume}\n Engine type {Type}\n Engine serial number: {SerialNum}");
-    // }
+    public void GetEngineInfo()
+    {
+        Console.Write("Enter engine power: ");
+        this.Power = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter engine volume: ");
+        this.Volume = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter engine type: ");
+        this.Type = Console.ReadLine();
+        Console.Write("Enter engine serial number: ");
+        this.SerialNum = Console.ReadLine();
+    }
+    public void DisplayEngineInfo() {
+        Console.WriteLine($"Engine power: {Power}\n Engine volume: {Volume}\n Engine type {Type}\n Engine serial number: {SerialNum}");
+    }
 }
 

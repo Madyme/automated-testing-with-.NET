@@ -19,7 +19,7 @@ class Chassis
         this.PermissibleLoad = Convert.ToInt32(Console.ReadLine());
     } 
     
-    public void ShowChassisInfo()
+    public void DisplayChassisInfo()
     {
         Console.WriteLine($"there are {NumberOfWheels} wheels, \n {Num}, \n {PermissibleLoad} in that chassis");
     }

@@ -9,7 +9,7 @@ class Transmission {
     public int NumOfGears {get; set;} = 6;
     public string? Manufacturer {get; set;}
 
-    public void ShowTransmissionInfo() {
+    public void DisplayTransmissionInfo() {
         Console.WriteLine($"Trnsmission type: {Type}, \n transmission number of gears: {NumOfGears}, \n transmission manufacturer: {Manufacturer}");
     }
 

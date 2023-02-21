@@ -7,7 +7,18 @@ public abstract class Vehicle {
         engine = new Engine();
         chassis = new Chassis();
         transmission = new Transmission();
+        Console.WriteLine("vehicle constructor");
     }
 
-    public abstract ShowInfo();
+    public void GetVehicleInfo() {
+        engine.GetEngineInfo();
+        chassis.GetChassisInfo(); 
+        transmission.GetTransmissionInfo();
+    }
+
+    public void DisplayVehicleInfo() {
+        engine.DisplayEngineInfo();
+        chassis.DisplayChassisInfo();
+        transmission.DisplayTransmissionInfo();
+    }
 }
