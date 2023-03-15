@@ -1,20 +1,22 @@
-class Bus : Vehicle {
-
-    int numberOfSeats;
-    public int NumberOfSeats {
-
-        set {
-            if(value < 36) {
+public class Bus : Vehicle
+{
+    private int numberOfSeats;
+    public int NumberOfSeats
+    {
+        set
+        {
+            if (value < 36)
+            {
                 throw new InitializationException("Minimal Number of seats is 36", value);
-                
-            } else {
+            }
+            else
+            {
                 numberOfSeats = value;
             }
         }
-
-        get {
+        get
+        {
             return numberOfSeats;
         }
     }
-
 }
