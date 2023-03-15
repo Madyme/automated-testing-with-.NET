@@ -1,8 +1,8 @@
 ﻿using System;
 
-class Program
+public class Program
 {
-    static char ConvertToChar(int num)
+    public static char ConvertToChar(int num)
     {
         if (num >= 0 && num <= 9)
         {
@@ -14,7 +14,7 @@ class Program
         }
     }
 
-    static string ConvertToBase(int baseNum, int num)
+    public static string ConvertToBase(int baseNum, int num)
     {
         string str = "";
         while (num > 0)
@@ -27,7 +27,7 @@ class Program
         return new String(res);
     }
 
-    static void Main()
+    public static void Main()
     {
         Console.Write("Input an integer in decimal form: ");
         string? num = Console.ReadLine();
