@@ -1,6 +1,5 @@
-struct Coordinate
+public struct Coordinate
 {
-
     public double xCoordinate;
     public double yCoordinate;
     public double zCoordinate;

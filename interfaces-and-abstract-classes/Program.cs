@@ -6,19 +6,22 @@ Coordinate CreateCoordinate()
     int xCoordinate; int yCoordinate; int zCoordinate;
     string? xInput = Console.ReadLine();
     // validate input fromats
-    while(!int.TryParse(xInput, out xCoordinate)) {
+    while (!int.TryParse(xInput, out xCoordinate))
+    {
         Console.Write("Invalid format. Please, enter a number: ");
         xInput = Console.ReadLine();
     }
     Console.Write("Enter positive y coordinate: ");
     string? yInput = Console.ReadLine();
-     while(!int.TryParse(yInput, out yCoordinate)) {
+    while (!int.TryParse(yInput, out yCoordinate))
+    {
         Console.Write("Invalid format. Please, enter a number: ");
         yInput = Console.ReadLine();
     }
     Console.Write("Enter positive z coordinate: ");
     string? zInput = Console.ReadLine();
-     while(!int.TryParse(zInput, out zCoordinate)) {
+    while (!int.TryParse(zInput, out zCoordinate))
+    {
         Console.Write("Invalid format. Please, enter a number: ");
         zInput = Console.ReadLine();
     }
@@ -33,11 +36,12 @@ void Execute()
     Console.Write("Enter an option you would like to get info about: ");
     string? inputOption = Console.ReadLine();
     int option;
-    while(!int.TryParse(inputOption, out option)) {
+    while (!int.TryParse(inputOption, out option))
+    {
         Console.Write("Invalid format. Please, enter a number: ");
         inputOption = Console.ReadLine();
     }
-        label: 
+label:
     switch (option)
     {
         case 1:
@@ -58,7 +62,7 @@ void Execute()
             Console.WriteLine($"the overall flight time of the plane: {plane.GetFlyTime(planeDistance)} hours");
             break;
         case 3:
-            read:
+        read:
             Console.WriteLine("Enter coordinates for fly-to position, and for current position of DRONE: ");
             Drone drone = new Drone(CreateCoordinate(), CreateCoordinate());
             var droneFlyToCoordinate = drone.FlyTo(drone.FlyToPoint);
@@ -71,15 +75,14 @@ void Execute()
             double droneDistance = drone.GetDistance(droneFlyToCoordinate, droneCurrentCoordinate);
             Console.WriteLine($"the overall flight time of the drone: {drone.GetFlyTime(droneDistance)} minutes");
             break;
-        default: 
+        default:
             Console.Write("You need to enter options only from 1 to 3: ");
             inputOption = Console.ReadLine();
-            while(!int.TryParse(inputOption, out option) || (option < 1 || option > 3)) {
+            while (!int.TryParse(inputOption, out option) || (option < 1 || option > 3))
+            {
                 Console.Write("You need to enter options only from 1 to 3: ");
                 inputOption = Console.ReadLine();
             }
             goto label;
-            
-
     }
 }
