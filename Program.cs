@@ -5,25 +5,28 @@ class Program
     static char ConvertToChar(int num)
     {
         if (num >= 0 && num <= 9)
+        {
             return Convert.ToChar(num + 48);
-        else
+        }
+        else 
+        {
             return Convert.ToChar(num - 10 + 65);
+        }
     }
 
     static string ConvertToBase(int baseNum, int num)
     {
         string str = "";
-
         while (num > 0)
         {
             str += ConvertToChar(num % baseNum);
             num /= baseNum;
         }
         char[] res = str.ToCharArray();
-
         Array.Reverse(res);
         return new String(res);
     }
+
     static void Main()
     {
         Console.Write("Input an integer in decimal form: ");
@@ -41,6 +44,6 @@ class Program
 			Console.Write("This is not valid input. Please enter an integer value: ");
 			baseNum = Console.ReadLine();
 		}
-        Console.WriteLine(num + " in base " + cleanBaseNum + " is " + ConvertToBase(cleanBaseNum, cleanNum));
+        Console.WriteLine($"{num} in base {cleanBaseNum} is {ConvertToBase(cleanBaseNum, cleanNum)}");
     }
 }
