@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cC5sBUZFFchO25vJmq2/YCVyQ4175Jj334QD9MAvZVwO4dHfknapI+UwlWCdhWPRFHCbuQ7uDw2elXmeOktWHQ==",
+  "dgSpecHash": "sgzvoHsGkCxHIKP1v6sPej0Ue9swFtOgyqkS17aduMGb1K+PlHQrKdE02cxXBSpR6Buj1dQWPxfT1yRB4JrOrw==",
   "success": true,
-  "projectFilePath": "/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/dev-and-build-tools.csproj",
+  "projectFilePath": "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\dev-and-build-tools\\dev-and-build-tools.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

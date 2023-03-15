@@ -2,7 +2,6 @@
 
 namespace Program
 {
-
     class Program
     {
         public static void Main(string[] args)
@@ -11,47 +10,48 @@ namespace Program
             string tempChar = ""; // temp char to find repeated values in entered string
             string? word = Console.ReadLine();
             int[] newArr = new int[word.Length];
-            int idx = 0; //index for newArr array
+            int index = 0; //index for newArr array
             int count = 1;
             int max = 0;
-            for (int i = 0; i < word.Length - 1; i++)
+            if (word != "")
             {
-                for (int j = i + 1; j < word.Length; j++)
+                for (int i = 0; i < word.Length - 1; i++)
                 {
-                    if (word[i] != word[j])
+                    for (int j = i + 1; j < word.Length; j++)
                     {
-                        if (tempChar != word[j].ToString())
+                        if (word[i] != word[j])
                         {
-                            count++;
+                            if (tempChar != word[j].ToString())
+                            {
+                                count++;
+                            }
+                            else
+                            {
+                                count = 1;
+                                break;
+                            }
                         }
-                        else
+                        else if (word[i] == word[j])
                         {
-                            count = 1;
+                            tempChar = word[j].ToString();
                             break;
                         }
-                    }
-                    else if (word[i] == word[j])
-                    {
-                        tempChar = word[j].ToString();
-                        break;
-                    }
 
+                    }
+                    newArr[index] = count;
+                    index++;
+                    count = 1;
                 }
-                newArr[idx] = count;
-                idx++;
-                count = 1;
-            }
-            max = newArr[0];
-            for (int i = 0; i < newArr.Length; i++)
-            {
-                if (max < newArr[i])
+                max = newArr[0];
+                for (int i = 0; i < newArr.Length; i++)
                 {
-                    max = newArr[i];
+                    if (max < newArr[i])
+                    {
+                        max = newArr[i];
+                    }
                 }
-            }
-            Console.WriteLine(max);
-
-
+                Console.WriteLine(max);
+            } 
         }
     }
 }

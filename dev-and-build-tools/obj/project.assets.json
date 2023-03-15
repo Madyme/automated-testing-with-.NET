@@ -8,25 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/madinaabdulborieva/.nuget/packages/": {}
+    "C:\\Users\\Madina\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/dev-and-build-tools.csproj",
+      "projectUniqueName": "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\dev-and-build-tools\\dev-and-build-tools.csproj",
       "projectName": "dev-and-build-tools",
-      "projectPath": "/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/dev-and-build-tools.csproj",
-      "packagesPath": "/Users/madinaabdulborieva/.nuget/packages/",
-      "outputPath": "/Users/madinaabdulborieva/Projects/automated-testing-with-.NET/dev-and-build-tools/obj/",
+      "projectPath": "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\dev-and-build-tools\\dev-and-build-tools.csproj",
+      "packagesPath": "C:\\Users\\Madina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\dev-and-build-tools\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/madinaabdulborieva/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Madina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
