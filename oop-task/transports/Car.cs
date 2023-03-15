@@ -1,9 +1,11 @@
-public class Car : Vehicle {
+public class Car : Vehicle 
+{
 
     public string? CarBodyType {get; set;}
     public string? CarModel {get; set;}
 
-    public void GetCarInfo() {
+    public void GetCarInfo() 
+    {
         GetVehicleInfo();
         Console.Write("Enter car model: ");
         this.CarModel = Console.ReadLine();
@@ -11,9 +13,9 @@ public class Car : Vehicle {
         this.CarBodyType = Console.ReadLine();
     }
 
-    public void DisplayCarInfo() {
+    public void DisplayCarInfo() 
+    {
         DisplayVehicleInfo();
         Console.WriteLine($"The car has {CarModel} model,\n {CarBodyType} body type");
     }
-
 }

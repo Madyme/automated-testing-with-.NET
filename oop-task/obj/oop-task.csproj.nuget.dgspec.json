@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\automated-testing-with-.NET\\oop-task\\oop-task.csproj": {}
+    "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\oop-task\\oop-task.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\automated-testing-with-.NET\\oop-task\\oop-task.csproj": {
+    "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\oop-task\\oop-task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\automated-testing-with-.NET\\oop-task\\oop-task.csproj",
+        "projectUniqueName": "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\oop-task\\oop-task.csproj",
         "projectName": "oop-task",
-        "projectPath": "C:\\Users\\user\\Desktop\\automated-testing-with-.NET\\oop-task\\oop-task.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\automated-testing-with-.NET\\oop-task\\obj\\",
+        "projectPath": "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\oop-task\\oop-task.csproj",
+        "packagesPath": "C:\\Users\\Madina\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Madina\\Desktop\\Projects\\automated-testing-with-.NET\\oop-task\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Madina\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

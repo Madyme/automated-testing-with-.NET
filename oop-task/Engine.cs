@@ -1,15 +1,8 @@
-
-// Engine engine = new Engine (1800, 50, "petrol", "PJ123456");
-// engine.ShowEngineInfo();
-// interface IEngine  {
-//     void ShowEngineInfo();
-// }
-public class Engine {
-
+public class Engine 
+{
     public int Power {get; set;}
     public int Volume {get; set;}
     public string? Type {get; set;}
-
     public string? SerialNum {get; set;}
 
     public void GetEngineInfo()
@@ -23,8 +16,8 @@ public class Engine {
         Console.Write("Enter engine serial number: ");
         this.SerialNum = Console.ReadLine();
     }
+
     public void DisplayEngineInfo() {
         Console.WriteLine($"Engine power: {Power}\n Engine volume: {Volume}\n Engine type {Type}\n Engine serial number: {SerialNum}");
     }
 }
-

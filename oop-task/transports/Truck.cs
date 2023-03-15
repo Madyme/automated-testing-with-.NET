@@ -3,7 +3,8 @@ public class Truck : Vehicle
     public string? TruckFuelType { get; set; }
     public string? TruckTrailerType { get; set; }
 
-    public void GetTruckInfo() {
+    public void GetTruckInfo() 
+    {
         GetVehicleInfo();
         Console.Write("Enter truck fuel type: ");
         this.TruckFuelType = Console.ReadLine();
@@ -11,10 +12,9 @@ public class Truck : Vehicle
         this.TruckTrailerType = Console.ReadLine();
     }
 
-    public void DisplayTruckInfo() {
+    public void DisplayTruckInfo() 
+    {
         DisplayVehicleInfo();
         Console.WriteLine($"The truck has {TruckFuelType} fuel type, {TruckTrailerType} trailer type");
-
     }
-   
 }
